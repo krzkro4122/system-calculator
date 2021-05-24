@@ -30,9 +30,9 @@ public class GUI {
 
     public static JTextField createJTextField(){
         jTextField.setFont(new Font("Arial", Font.PLAIN, 50));
-        jTextField.setForeground(Color.darkGray);
+        jTextField.setForeground(Color.black);
         jTextField.setBorder(BorderFactory.createLineBorder(Color.darkGray));
-        jTextField.setBackground(Color.white);
+        jTextField.setBackground(Color.lightGray);
         jTextField.setHorizontalAlignment(SwingConstants.RIGHT);
         jTextField.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 20));
         jTextField.setPreferredSize(new Dimension(100,100));
@@ -43,10 +43,10 @@ public class GUI {
 
     public static void createAndShowGUI() {
 
-        JPanel jPanel = new JPanel(new GridLayout(5,5,0,0));
+        JPanel jPanel = new JPanel(new GridLayout(4,5,0,0));
         createJTextField();
 
-        String[] keyTab = {"/","%","C","DEL","9","8","7","x","6","5","4","-","3","2","1","+","~","0",".","="};
+        String[] keyTab = {"1","2","3","+","4","5","6","-","7","8","9","x","C","0","=","/"};
         for(String s : keyTab) jPanel.add(createButton(s));
 
         jf.getContentPane().add(jTextField,BorderLayout.NORTH);
