@@ -24,7 +24,7 @@ public class CalcValue {
         Double val1 = Double.parseDouble(GUI.lastValue);
 
         if(val2 == 0) {
-            GUI.jTextField.setText("NAN");
+            GUI.jTextField.setText("NaN");
         }else {
             displayValue(val1/val2);
             GUI.lastValue = String.valueOf(val1/val2);
@@ -51,7 +51,7 @@ public class CalcValue {
     }
 
     public static void displayValue(double val){
-        DecimalFormat decimalFormat = new DecimalFormat("#0.00000");
+        DecimalFormat decimalFormat = new DecimalFormat("#0.0000");
         if(Math.round(val) == val){
             GUI.jTextField.setText(String.valueOf(Math.round(val)));
         }else{

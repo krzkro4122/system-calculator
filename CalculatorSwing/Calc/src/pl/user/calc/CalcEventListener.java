@@ -47,7 +47,7 @@ public class CalcEventListener implements java.awt.event.ActionListener {
                     if(patternDot.matcher(currentValue).matches()){
                         GUI.jTextField.setText(currentValue + actionValue);
                     }
-                }else if(actionValue.matches("INV")){
+                }else if(actionValue.matches("~")){
                     if(Double.parseDouble(GUI.lastValue) == Double.parseDouble(currentValue)){
                         GUI.lastValue = String.valueOf(0 - Double.parseDouble(currentValue));
                         CalcValue.displayValue(0 - Double.parseDouble(currentValue));
