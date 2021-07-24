@@ -1,4 +1,4 @@
 # JavaCalculator
-A simple version of a system calculator
+A simpler version of the system calculator
 
 GUI: Swing
